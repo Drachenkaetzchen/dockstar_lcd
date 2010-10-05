@@ -2,3 +2,7 @@ This is the Dockstar LCD code.
 
 I used eclipse to build it, so you'd better use eclipse also or simply
 use the compiled firmware.
+
+If you wish to use LCD4Linux, you need to use the patched drv_LCD2USB.c driver
+found within the lcd4linux directory. Note that this is a quick and dirty hack
+and probably disables other LCD2USB-devices you maybe use.

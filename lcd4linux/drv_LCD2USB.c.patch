@@ -1,0 +1,11 @@
+--- drv_LCD2USB.c	2010-10-05 19:58:30.000000000 +0000
++++ drv_LCD2USB.c.new	2010-10-05 19:57:52.000000000 +0000
+@@ -379,6 +379,8 @@
+ 	pos = (row % 2) * 64 + (row / 2) * 20 + col;
+     }
+ 
++    pos = (row*16)+col;
++
+     drv_L2U_command(ctrl, 0x80 | pos);
+ 
+     while (len--) {
